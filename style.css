@@ -1,0 +1,142 @@
+body{
+    background-color:#ffffff;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+}
+.container{
+    background-color: #ffffff;
+    border: 1px solid white ;
+    border-radius: 70px;
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+    max-width: 2000px;
+    box-shadow: 0 0 10px;
+    height: 600px;
+    width: 800px;
+}
+img{
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-left: 40px ;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+}
+.create {
+    text-decoration: underline;
+    text-align: right;
+    margin-left: auto;
+    font-size: 18px;
+    font-weight: 200;
+    color: #0000ff65;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+    margin-right: 70px;
+    margin-left: 0px;
+}
+.text {
+    margin-top: 30px;
+}
+
+.form{
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+span{
+    font-size: small;
+    text-align: left;
+    font-weight: 100;
+    color: #000000c5;
+}
+
+input{
+    border: none;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+i.bx {
+    font-size: 14px; 
+    margin-bottom: 10px; 
+}
+input[type="checkbox"] {
+    background-color: black;
+    color: black;
+    
+}
+h3{
+    font-family: sans-serif;
+    margin-top: 50px;
+    text-align: left;
+    font-weight: 5000;
+    font-size: 40px;
+    line-height: 2px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #4a539aa5;
+    color: #ffffffc2;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Allow content to expand vertically */
+    }
+
+    img {
+        margin: 10px auto; /* Center the image horizontally */
+    }
+    .text {
+        text-align: center; /* Center-align text for smaller screens */
+    }
+    .create {
+        text-align: center; /* Center-align the "Create an account" link */
+    }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+    img {
+        width: 200px; /* Reduce image size for medium screens */
+    }
+}
+
+/* Media query for screens larger than 900px */
+@media (min-width: 901px) {
+    .container {
+        height: 700px; /* Adjust container height for larger screens */
+    }
+
+    .text {
+        font-size: 18px; /* Increase font size for better readability on larger screens */
+    }
+}
+
